@@ -8,7 +8,7 @@ function asansorleriListele(asansorler) {
 
     asansorler.forEach(asansor => {
         const asansorDiv = document.createElement('div');
-        asansorDiv.classList.add('kart'); // Asansör div'ine kart sınıfı eklendi
+        asansorDiv.classList.add('card'); // Asansör div'ine c sdnıfı eklendi
 
         // Eksik ürünler listesi oluşturma
         let eksikUrunlerHTML = '';

@@ -92,7 +92,7 @@ h1 {
 }
 
 /* Kartlar */
-.kart-container {
+.card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -100,7 +100,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.kart {
+.card {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -109,23 +109,23 @@ h1 {
     cursor: pointer;
 }
 
-.kart:hover {
+.card:hover {
     transform: translateY(-5px);
 }
 
-.kart h3 {
+.card h3 {
     color: #1b8102;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.kart p {
+.card p {
     color: #666;
     margin-bottom: 8px;
 }
 
-.kart p strong {
+.card p strong {
     font-weight: bold;
     color: #024681;
 }
