@@ -1,0 +1,132 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/e2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Beyaz arka plan ve %50 opaklık */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    backdrop-filter: blur(10px); /* 10 piksel bulanıklık */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #024681;
+}
+
+#durumSelect {
+    color: #d22323 ; /* Varsayılan yazı rengi */
+    padding-top: 30px !important;
+}
+
+#durumSelect option {
+    color: #333333; /* Seçeneklerin yazı rengi */
+}
+/* Form */
+#asansorForm {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#asansorForm label {
+    font-weight: bold;
+    color: #024681;
+    margin-bottom: 5px;
+}
+
+
+#asansorForm .form-control {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#asansorForm .form-control:focus {
+    outline: none;
+    border-color: #4cafa8;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+#asansorForm button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#asansorForm button[type="submit"]:hover {
+    background-color: #024681;
+}
+
+/* Filtreleme */
+#durumFilter {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Kartlar */
+.kart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.kart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.kart:hover {
+    transform: translateY(-5px);
+}
+
+.kart h3 {
+    color: #1b8102;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.kart p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.kart p strong {
+    font-weight: bold;
+    color: #024681;
+}
+

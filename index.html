@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asansör Yönetim Platformu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Asansör Arıza ve Bakım Yönetimi</h1>
+        <!-- Asansör ekleme formu  burada-->
+        <form id="asansorForm">
+            <div class="form-group">
+                <label for="isimInput">Müşteri Bilgileri</label>
+                <input type="text" class="form-control" id="isimInput" name="isim" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="ulkeInput">Ülke:</label>
+                    <input type="text" class="form-control" id="ulkeInput" name="ulke" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="sehirInput">Şehir:</label>
+                    <input type="text" class="form-control" id="sehirInput" name="sehir" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="mahalleInput ">Mahalle:</label>
+                    <input type="text" class="form-control" id="mahalleInput" name="mahalle" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="caddeInput">Cadde:</label>
+                    <input type="text" class="form-control" id="caddeInput" name="cadde" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="durumSelect">Durum:</label>
+                <select class="form-control" id="durumSelect" name="durum" required>
+                    <option value="montaj">Montaj Bekleyen Asansörler</option>
+                    <option value="ariza">Arıza Onarım Bekleyen Asansörler</option>
+                    <option value="bakim">Bakım Bekleyen Asansörler</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="eksikUrunlerInput">Eksik Ürünler (virgülle ayırın):</label>
+                <input type="text" class="form-control" id="eksikUrunlerInput" name="eksikUrunler">
+            </div>
+            <button type="submit" class="btn btn-primary">Asansör Ekle</button>
+        </form>
+        <!-- Filtreleme -->
+        <div class="form-group">
+            <label for="durumFilter">Filtreleme:</label>
+            <select class="form-control" id="durumFilter">
+                <option value="tum">Tüm Asansörler</option>
+                <option value="montaj">Montaj Bekleyen Asansörler</option>
+                <option value="ariza">Arıza Onarım Bekleyen Asansörler</option>
+                <option value="bakim">Bakım Bekleyen Asansörler</option>
+            </select>
+        </div>
+        <!-- Asansörler Listesi Kartları -->
+        <div id="asansorListesi" class="kart-container">
+            <!-- JavaScript ile buraya kartlar eklenecek -->
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
